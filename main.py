@@ -1,3 +1,19 @@
+'''
+    File "c:\Users\tbebb\Documents\CTF-documentation-template\main.py", line 66, in <module>
+    customtkinter.set_default_color_theme(THEMES[theme_name])
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+    File "C:\Users\tbebb\Documents\CTF-documentation-template\.venv\Lib\site-packages\customtkinter\__init__.py", line 70, in set_default_color_theme
+    ThemeManager.load_theme(color_string)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+    File "C:\Users\tbebb\Documents\CTF-documentation-template\.venv\Lib\site-packages\customtkinter\windows\widgets\theme\theme_manager.py", line 23, in load_theme
+    with open(theme_name_or_path, "r") as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+    FileNotFoundError: [Errno 2] No such file or directory: 'c:\\Users\\tbebb\\Documents\\CTF-documentation-template\\assets\\violet.json'
+
+    I think I need some extra files for this.
+    It appears in that first comment that this has json files, but I did not see any attached when I was on the documentation site.
+'''
+
 import os
 import customtkinter
 
